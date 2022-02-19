@@ -43,7 +43,7 @@
 <li> React Navigation v6 </li>
 <li> Image crop picker </li>
 <li> Linear Gradient </li>
-<li> lottie </li>
+<li> Lottie </li>
 <li> Iphone X Helper </li>
 <li> Animatable </li>
 <li> Responsive Screen </li>
