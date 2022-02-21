@@ -8,7 +8,8 @@ import {
 
 } from './types';
 import axios from 'axios';
-// Get mayn film
+
+// Get main film
 export const getFilmMain = () => async (dispatch, getState) => {
   const URI =
     'https://api.themoviedb.org/3/movie/now_playing?api_key=6f26fd536dd6192ec8a57e94141f8b20';
@@ -27,11 +28,10 @@ export const getFilmMain = () => async (dispatch, getState) => {
     });
 };
 
-// Get mayn film
+// Get popular film
 export const getPopularFilms = () => async (dispatch, getState) => {
     const URI =
       'https://api.themoviedb.org/3/movie/popular?api_key=6f26fd536dd6192ec8a57e94141f8b20';
-  
     dispatch({ type: FILMS_POPULAR_FETCHING });
     return await axios
       .get(`${URI}`)
@@ -45,4 +45,3 @@ export const getPopularFilms = () => async (dispatch, getState) => {
         dispatch({ type: FILMS_POPULAR_FAIL, payload: err });
       });
   };
-  
